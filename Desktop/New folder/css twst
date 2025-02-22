@@ -1,0 +1,15 @@
+/* Style all links with a blue font color */
+a {
+  color: blue;
+  text-decoration: none; /* Removes underline */
+}
+
+/* Change the font color to red on hover */
+a:hover {
+  color: red;
+}
+
+/* Change the font color to green for active links */
+a:active {
+  color: green;
+}

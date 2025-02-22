@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Simple Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="box"></div>
+    <button>Click Me</button>
+    <div class="gallery">
+        <img src="https://via.placeholder.com/300" alt="Image 1">
+        <img src="https://via.placeholder.com/300" alt="Image 2">
+        <img src="https://via.placeholder.com/300" alt="Image 3">
+        <img src="https://via.placeholder.com/300" alt="Image 4">
+      </div>
+   <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    <h1>Welcome to My Simple Webpage</h1>
+  <p>This is a simple webpage with a title and a paragraph of text. The paragraph is styled with a larger font size and proper line spacing for better readability. The title also has a cool text shadow effect!</p>
+  <div class="card">
+    <p>This is a simple card with a border, padding, and margin.</p>
+  </div>
+</body>
+</html>
+
+<ul>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+    <li><a href="#">Link 4</a></li>
+    <li><a href="#">Link 5</a></li>
+  </ul>
+  <style>
+a {
+  color: blue;
+  text-decoration: none; 
+}
+a:hover {
+  color: red;
+}
+a:active {
+  color: green;
+}
+h1 {
+  font-family: Arial, sans-serif; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+p {
+  font-size: 1.2rem; 
+  line-height: 1.6; 
+  text-align: justify; 
+}
+
+.card {
+  border: 1px solid gray; 
+  padding: 20px;           
+  margin: 10px;        
+  max-width: 300px;       
+}
+
+
+/* Basic reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+nav {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  background-color: #333; 
+}
+
+
+nav a {
+  color: white; 
+  text-decoration: none;
+  margin: 0 15px; 
+  font-size: 18px; 
+}
+
+nav a:hover {
+  color: #f0f0f0; 
+}
+
+.gallery {
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px; 
+  margin: 20px;
+}
+.gallery img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+}
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr; 
+  }
+}
+button {
+  background-color: blue; 
+  color: white;           
+  border: none;           
+  padding: 10px 20px;      
+  font-size: 16px;         
+  cursor: pointer;        
+  border-radius: 5px;      
+  transition: background-color 0.3s ease; 
+}
+
+button:hover {
+  background-color: darkblue;
+}
+</style>
